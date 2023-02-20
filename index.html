@@ -23,6 +23,15 @@
     </div>
   </div>
   <script>
+    // getElementById로 id 찾아서 변수 선언
+    let machine = document.getElementById('root'); 
+    // 선언한 변수 안에 p태그 찾아서 변수 선언
+    let money = machine.getElementsByTagName('p');
+    // 배열의 innerText값 찾아서 2번째 배열 - 1번째 배열 계산 실행
+    console.log(money[1].innerText - money[0].innerText);
+
+
+    // innerText면 string으로 불러와져서 계산이 안 됐을텐데 어떻게 된걸까? 만약 string이어서 계산이 안된다면 어떻게 해야 할까?
   </script>
 </body>
 </html>
